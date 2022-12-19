@@ -10,7 +10,7 @@ class NoteController extends Controller
 {
     public function index()
     {
-        $notes = Note::orderBy('created_at', 'desc')->get();
+        $notes = Note::where('user_id', Auth::user()->id)->get();
         return response()->json($notes, 200);
     }
 
