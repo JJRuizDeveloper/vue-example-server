@@ -1,3 +1,8 @@
+# Requisitos previos
+1. Composer
+2. PHP 8.1 o más
+3. Motor DB (MySQL, MariaDB o PostgreSQL)
+
 # Instalación
 
 1. composer install
